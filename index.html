@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Heights: Tu Ciudad, Tu Oportunidad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles for the entire page */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background color */
+            color: #e0e0e0; /* Light text color for contrast */
+        }
+        /* Styling for main section titles */
+        .section-title {
+            color: #f0f0f0; /* Slightly lighter color for titles */
+            font-weight: 700; /* Bold font weight */
+        }
+        /* Primary button styling */
+        .btn-primary {
+            background-color: #5c6c73; /* Greyish-blue for primary buttons */
+            color: #ffffff; /* White text for buttons */
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+        /* Primary button hover effect */
+        .btn-primary:hover {
+            background-color: #7a8c93; /* Lighter shade on hover */
+        }
+        /* Card component styling */
+        .card {
+            background-color: #2a2a2a; /* Card background slightly lighter than body */
+            border: 1px solid #3a3a3a; /* Subtle border for cards */
+        }
+        /* Smooth scroll behavior for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="bg-gray-900 text-white p-4 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Liberty Heights Logo Placeholder -->
+                <!-- You can replace this with your generated logo image -->
+                <img src="https://placehold.co/60x60/2a2a2a/f0f0f0?text=LH" alt="Logo de Liberty Heights" class="h-12 w-12 rounded-full mr-3">
+                <a href="#hero" class="text-2xl font-bold tracking-wide">LIBERTY HEIGHTS</a>
+            </div>
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400 transition-colors">Sobre Nosotros</a></li>
+                <li><a href="#services" class="hover:text-gray-400 transition-colors">Servicios</a></li>
+                <li><a href="#residences" class="hover:text-gray-400 transition-colors">Residencias</a></li>
+                <li><a href="#opportunities" class="hover:text-gray-400 transition-colors">Oportunidades</a></li>
+                <li><a href="#community" class="hover:text-gray-400 transition-colors">Comunidad</a></li>
+                <li><a href="#visit" class="btn-primary px-4 py-2 rounded-lg shadow-md">Visítanos</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 py-2 mt-2 rounded-md shadow-lg">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="#about" class="block py-2 hover:bg-gray-700 w-full text-center transition-colors">Sobre Nosotros</a></li>
+                <li><a href="#services" class="block py-2 hover:bg-gray-700 w-full text-center transition-colors">Servicios</a></li>
+                <li><a href="#residences" class="block py-2 hover:bg-gray-700 w-full text-center transition-colors">Residencias</a></li>
+                <li><a href="#opportunities" class="block py-2 hover:bg-gray-700 w-full text-center transition-colors">Oportunidades</a></li>
+                <li><a href="#community" class="block py-2 hover:bg-gray-700 w-full text-center transition-colors">Comunidad</a></li>
+                <li><a href="#visit" class="btn-primary px-4 py-2 rounded-lg shadow-md w-max">Visítanos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-cover bg-center h-screen flex items-center justify-center text-center p-4" style="background-image: url('https://placehold.co/1920x1080/3a3a3a/e0e0e0?text=Vista+Panorámica+de+Liberty+Heights');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                Liberty Heights: <br> Tu Ciudad, Tu Oportunidad.
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                Donde tus sueños encuentran su ciudad. Una metrópolis vibrante en Bloxburg, diseñada para tu comodidad, entretenimiento y bienestar.
+            </p>
+            <a href="#visit" class="btn-primary text-xl px-8 py-4 rounded-full shadow-xl hover:scale-105 transform transition-transform">
+                ¡Explora Liberty Heights Ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 container mx-auto text-center">
+        <h2 class="section-title text-4xl mb-8">Sobre Nosotros</h2>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+            Liberty Heights es más que un conjunto de edificios; es un **ecosistema urbano completo** y en constante crecimiento, inspirado en la energía y la sofisticación de una gran metrópolis. Hemos creado un espacio donde la **conveniencia se encuentra con la calidad de vida**, fomentando una comunidad activa y vibrante.
+        </p>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto mt-4">
+            Nacida de la pasión por la construcción y el roleplay, nuestra ciudad es un testimonio de la ambición, la paciencia y la colaboración comunitaria, ofreciendo una experiencia de vida urbana de rol premium en Bloxburg.
+        </p>
+    </section>
+
+    <!-- Services & Amenities Section -->
+    <section id="services" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="section-title text-4xl text-center mb-12">Servicios y Amenidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Apartment Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Apartamentos" alt="Apartamentos" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Apartamentos de Lujo</h3>
+                    <p class="text-gray-400">Modernos y acogedores, perfectos para establecer tu hogar en el corazón de la ciudad.</p>
+                </div>
+                <!-- Hotel Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Hotel" alt="Hotel" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Hotel Exclusivo</h3>
+                    <p class="text-gray-400">Estancias cómodas y de primera clase para tus visitas o una escapada inolvidable.</p>
+                </div>
+                <!-- Gym Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Gimnasio" alt="Gimnasio" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Gimnasio de Última Generación</h3>
+                    <p class="text-gray-400">Mantente en forma y saludable con equipos modernos y un ambiente inspirador.</p>
+                </div>
+                <!-- Coffee Shop Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Cafetería" alt="Cafetería" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Cafeterías Acogedoras</h3>
+                    <p class="text-gray-400">Disfruta de un buen café y un ambiente relajado para empezar tu día o hacer una pausa.</p>
+                </div>
+                <!-- Restaurants Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Restaurantes" alt="Restaurantes" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Variedad de Restaurantes</h3>
+                    <p class="text-gray-400">Explora una explosión de sabores con opciones culinarias para cada paladar.</p>
+                </div>
+                <!-- Bar Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Bar" alt="Bar" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Bar Sofisticado</h3>
+                    <p class="text-gray-400">El lugar ideal para relajarse, socializar y disfrutar de una noche vibrante.</p>
+                </div>
+                <!-- Convenience Stores Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Tiendas" alt="Tiendas de Conveniencia" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Tiendas de Conveniencia</h3>
+                    <p class="text-gray-400">Todo lo que necesitas para tus compras diarias, a pocos pasos de tu hogar.</p>
+                </div>
+                <!-- Theater-Cinema Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Teatro+Cine" alt="Teatro-Cine" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Teatro-Cine Moderno</h3>
+                    <p class="text-gray-400">Sumérgete en nuevas historias y disfruta del mejor entretenimiento.</p>
+                </div>
+                <!-- Daycare Card -->
+                <div class="card p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+                    <img src="https://placehold.co/150x100/4a4a4a/e0e0e0?text=Guardería" alt="Guardería" class="w-full h-32 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Guardería Segura</h3>
+                    <p class="text-gray-400">Un espacio seguro y divertido para los más pequeños, brindando tranquilidad a los padres.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Residences Section -->
+    <section id="residences" class="py-16 px-4 container mx-auto text-center">
+        <h2 class="section-title text-4xl mb-8">Nuestras Residencias</h2>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+            Encuentra tu espacio ideal en Liberty Heights. Desde estudios acogedores hasta amplios áticos, cada apartamento está diseñado con estilo y funcionalidad en mente, ofreciendo vistas impresionantes de la ciudad.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Interior+Apartamento+1" alt="Interior Apartamento 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Interior+Apartamento+2" alt="Interior Apartamento 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Interior+Apartamento+3" alt="Interior Apartamento 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Vista+desde+Apartamento" alt="Vista desde Apartamento" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Exterior+Residencial" alt="Exterior Residencial" class="w-full h-64 object-cover rounded-lg shadow-md">
+            <img src="https://placehold.co/400x300/5a5a5a/e0e0e0?text=Lobby+Residencial" alt="Lobby Residencial" class="w-full h-64 object-cover rounded-lg shadow-md">
+        </div>
+        <p class="text-lg mt-8">
+            Para más detalles sobre cómo alquilar o adquirir tu propio espacio, visita nuestra ciudad en Bloxburg o contáctanos.
+        </p>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section id="opportunities" class="py-16 px-4 bg-gray-800 text-center">
+        <div class="container mx-auto">
+            <h2 class="section-title text-4xl mb-8">Oportunidades en Liberty Heights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                <div class="card p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold mb-4">¡Únete a Nuestro Equipo!</h3>
+                    <p class="text-gray-400 mb-6">
+                        ¿Te gustaría ser parte de la vibrante economía de Liberty Heights? Estamos buscando talentos entusiastas y dedicados para trabajar en nuestros hoteles, restaurantes, tiendas, y más.
+                    </p>
+                    <!-- Link to your job application form -->
+                    <a href="#" class="btn-primary px-6 py-3 rounded-full text-lg shadow-md hover:scale-105 transform transition-transform">
+                        Aplica para un Empleo Aquí
+                    </a>
+                </div>
+                <div class="card p-8 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-semibold mb-4">Abre Tu Propio Negocio</h3>
+                    <p class="text-gray-400 mb-6">
+                        ¿Tienes una idea de negocio innovadora que crees que encajaría perfectamente en Liberty Heights? Contáctanos para explorar cómo puedes establecer tu empresa en nuestra próspera ciudad.
+                    </p>
+                    <!-- Link for business inquiries -->
+                    <a href="#" class="btn-primary px-6 py-3 rounded-full text-lg shadow-md hover:scale-105 transform transition-transform">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Events Section -->
+    <section id="community" class="py-16 px-4 container mx-auto text-center">
+        <h2 class="section-title text-4xl mb-8">Nuestra Comunidad y Eventos</h2>
+        <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+            En Liberty Heights, no solo construimos edificios; construimos conexiones. Nuestra comunidad es el corazón de la ciudad, y siempre hay algo emocionante que hacer. Fomentamos un ambiente donde los vecinos se conectan y las amistades florecen.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div class="card p-6 rounded-lg shadow-lg">
+                <img src="https://placehold.co/400x250/5a5a5a/e0e0e0?text=Evento+Comunitario+1" alt="Evento Comunitario 1" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-2xl font-semibold mb-2">Festival de Verano</h3>
+                <p class="text-gray-400">Un día lleno de música, comida y diversión para toda la familia. ¡No te lo pierdas!</p>
+                <p class="text-gray-500 text-sm mt-2">Fecha: [Próxima Fecha]</p>
+            </div>
+            <div class="card p-6 rounded-lg shadow-lg">
+                <img src="https://placehold.co/400x250/5a5a5a/e0e0e0?text=Evento+Comunitario+2" alt="Evento Comunitario 2" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-2xl font-semibold mb-2">Noche de Cine Clásico</h3>
+                <p class="text-gray-400">Disfruta de tus películas favoritas bajo las estrellas en nuestro Teatro-Cine.</p>
+                <p class="text-gray-500 text-sm mt-2">Fecha: [Próxima Fecha]</p>
+            </div>
+        </div>
+        <p class="text-lg mb-6">
+            ¡Síguenos en Discord para no perderte ninguna actualización y ser parte de la conversación!
+        </p>
+        <!-- Link to your Discord server -->
+        <a href="#" class="btn-primary px-6 py-3 rounded-full text-lg shadow-md hover:scale-105 transform transition-transform">
+            Únete a Nuestro Discord
+        </a>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section id="visit" class="py-16 px-4 bg-gray-900 text-center">
+        <div class="container mx-auto">
+            <h2 class="section-title text-4xl mb-8">¡Visita Liberty Heights!</h2>
+            <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+                ¿Listo para experimentar Liberty Heights en Bloxburg? Haz clic en el botón a continuación para unirte a nuestro servidor y comenzar tu aventura en la ciudad de tus sueños.
+            </p>
+            <!-- Link directly to your Bloxburg game/server -->
+            <a href="https://www.roblox.com/games/185655149/Welcome-to-Bloxburg-BETA" target="_blank" rel="noopener noreferrer" class="btn-primary text-2xl px-10 py-5 rounded-full shadow-xl hover:scale-105 transform transition-transform">
+                ¡Juega Ahora en Bloxburg!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-8 px-4">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="#hero" class="text-xl font-bold tracking-wide hover:text-gray-200 transition-colors">LIBERTY HEIGHTS</a>
+            </div>
+            <p class="mb-4">&copy; 2025 Liberty Heights. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Links -->
+                <a href="#" class="hover:text-gray-200 transition-colors">Discord</a>
+                <a href="#" class="hover:text-gray-200 transition-colors">Grupo de Roblox</a>
+                <a href="#" class="hover:text-gray-200 transition-colors">Twitter</a>
+                <a href="#" class="hover:text-gray-200 transition-colors">Políticas de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Toggle mobile menu visibility on button click
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked (for smooth scrolling)
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
